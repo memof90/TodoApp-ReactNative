@@ -30,13 +30,14 @@ const headerButton = [
 // create a component
 const Header = () => {
     return (
-        <>
-        <Text style={styles.title}>To-Do App</Text>
+        <View style={styles.header}>
+        <Text style={tw.style({fontSize: 30}, 'mb-2')}>To-Do App</Text>
         <FlatList 
             style={styles.FlatList}
             data={headerButton}
             horizontal
             keyExtractor={(item) => item.id}
+            scrollEnabled={false}
             renderItem ={({item}) => (
                 <TouchableOpacity
                 onPress={() => console.log('button Pressed')}
@@ -44,6 +45,7 @@ const Header = () => {
                 <View>
                     <Icon 
                         style={tw `p-2`}
+                        size={25}
                         name={item.icon}
                         color="#868686" 
                         type={item.type}
@@ -56,24 +58,22 @@ const Header = () => {
                 </TouchableOpacity>
             )}
         />
-        </>
+        </View>
+      
+        
     );
 };
 
 // define your styles
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
+    header: {
+        padding: 20,
+        flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#2c3e50',
-    },
-    title: {
-        fontSize: 30,
+        justifyContent: 'space-between',
     },
     FlatList: {
-        paddingHorizontal: 220,
-        marginTop: -35  
+        paddingHorizontal: 70,
      }
 });
 
