@@ -16,6 +16,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 //SCREENS
 import HomeScreen from './src/Screens/HomeScreen';
+import AddTask from './src/Screens/AddTaskScreen';
 
 
 const { store, persistor } = ConfigureStore();
@@ -33,6 +34,13 @@ export default function App() {
         <Stack.Screen 
           name='HomeScreen'
           component={HomeScreen}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen 
+          name='AddTask'
+          component={AddTask}
           options={{
             headerShown: false
           }}

@@ -3,8 +3,12 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import tw from 'tailwind-react-native-classnames';
+// MY COMPONENTS
 import Header from '../Components/Header.Component';
 import Tasks from '../Components/CompletedTask.Component';
+import Peding from '../Components/PedingTask.Component';
+import NavOptions from '../Components/Navegation.components';
+
 
 // import CompletedTaks  from '../Components/CompletedTask.Component';
 
@@ -15,6 +19,8 @@ const HomeScreen = () => {
             <View style={tw `p-2`}>
                 <Header />
                 <Tasks />
+                <Peding />
+                <NavOptions />
             </View>
         </SafeAreaView>
     );
