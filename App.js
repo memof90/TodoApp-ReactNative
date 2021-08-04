@@ -30,7 +30,7 @@ export default function App() {
     <PersistGate persistor={persistor}>
     <NavigationContainer>
     <SafeAreaProvider>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName='HomeScreen'>
         <Stack.Screen 
           name='HomeScreen'
           component={HomeScreen}
