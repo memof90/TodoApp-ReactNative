@@ -1,9 +1,32 @@
 //import liraries
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet,ScrollView,TextInput, TouchableOpacity } from 'react-native';
 import tw from 'tailwind-react-native-classnames';
+// import DateTimePicker from '@react-native-community/datetimepicker';
+import { useNavigation } from '@react-navigation/native';
 // create a component
 const FormTask = () => {
+  const navigation = useNavigation();
+  // const [date, setDate] = useState(new Date(1598051730000));
+  // const [mode, setMode] = useState('date');
+  // const [show, setShow] = useState(false);
+
+  // const onChange = (event, selectedDate) => {
+  //   const currentDate = selectedDate || date;
+  //   setShow(Platform.OS === 'ios');
+  //   setDate(currentDate);
+  // };
+
+  // const showMode = (currentMode) => {
+  //   setShow(true);
+  //   setMode(currentMode);
+  // };
+
+  // const showDatepicker = () => {
+  //   showMode('date');
+  // };
+
+
     return (
         <ScrollView>
             <View style={styles.formRow}>
@@ -21,8 +44,25 @@ const FormTask = () => {
             <View style={styles.formItem}>
             <TextInput 
             style={tw `pl-3 pb-5 pt-4 bg-gray-200 rounded m-2 w-80`}
-              placeholder= "Desing Team Meeting"
+              placeholder= "2021-02-28"
             />
+            {/* <TouchableOpacity
+           
+            onPress={() => showDatepicker()}
+            >
+            </TouchableOpacity>
+            {show && (
+        <DateTimePicker
+          testID="dateTimePicker"
+          value={date}
+          mode={mode}
+          is24Hour={true}
+          display="default"
+          onChange={onChange}
+          // style={{width: 320, backgroundColor: "gray"}} 
+          style={tw `pl-3 pb-10 pt-4 bg-gray-200 rounded m-2 w-80`}
+        />
+          )} */}
             </View>
             <View style={styles.formRowTwo}>
             <Text style={styles.formLabel}>Start Time</Text>
@@ -58,7 +98,7 @@ const FormTask = () => {
             </View>
             <TouchableOpacity
                style={tw.style('pb-5 pt-4 m-2 w-80 rounded-full', styles.touchableOpacity )}
-               onPress={() => "navigation.navigate(item.screen)"}
+               onPress={() => navigation.goBack()}
                >
                 <View>
                   <Text style={styles.btnText}> Create a Task </Text>
