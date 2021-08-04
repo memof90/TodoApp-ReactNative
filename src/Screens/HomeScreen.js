@@ -4,12 +4,17 @@ import { View, Text, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import tw from 'tailwind-react-native-classnames';
 import Header from '../Components/Header.Component';
+import Tasks from '../Components/CompletedTask.Component';
+
+// import CompletedTaks  from '../Components/CompletedTask.Component';
+
 // create a component
 const HomeScreen = () => {
     return (
         <SafeAreaView style={tw `bg-white h-full`}>
             <View style={tw `p-2`}>
                 <Header />
+                <Tasks />
             </View>
         </SafeAreaView>
     );
