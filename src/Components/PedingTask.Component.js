@@ -5,11 +5,13 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import tw from 'tailwind-react-native-classnames';
 import CheckBox from '../constants/CheckBox/CheckboxButton';
 
+// REDUX
+
 // create a component
 const Peding = () => {
     return (
     <SafeAreaView style={tw.style(styles.container, 'p-2 ml-3')}>
-            <Text style={styles.tittle}>Peding Tasks</Text>  
+            <Text style={styles.tittle}>Complete Tasks</Text>  
                 <View style={tw `mt-9`}>
                         <CheckBox 
                             text= 'Desing Wiframes' 

@@ -4,9 +4,16 @@ import { View, Text, StyleSheet,ScrollView,TextInput, TouchableOpacity } from 'r
 import tw from 'tailwind-react-native-classnames';
 // import DateTimePicker from '@react-native-community/datetimepicker';
 import { useNavigation } from '@react-navigation/native';
+
+
 // create a component
-const FormTask = () => {
-  const navigation = useNavigation();
+const FormTask = ( {navigation} ) => {
+  const [taskTitle, setTaskTitle] = useState('')
+  function onSaveNote() {
+    navigation.state.params.addtask({taskTitle})
+    navigation.goBack()
+}
+  // const navigation = useNavigation();
   // const [date, setDate] = useState(new Date(1598051730000));
   // const [mode, setMode] = useState('date');
   // const [show, setShow] = useState(false);
@@ -36,6 +43,8 @@ const FormTask = () => {
             <TextInput 
             style={tw `pl-3 pb-5 pt-4 bg-gray-200 rounded m-2 w-80`}
               placeholder= "Desing Team Meeting"
+              value={taskTitle}
+              onChangeText={setTaskTitle}
             />
             </View>
             <View style={styles.formRow}>
@@ -98,7 +107,7 @@ const FormTask = () => {
             </View>
             <TouchableOpacity
                style={tw.style('pb-5 pt-4 m-2 w-80 rounded-full', styles.touchableOpacity )}
-               onPress={() => navigation.goBack()}
+               onPress={() => onSaveNote()}
                >
                 <View>
                   <Text style={styles.btnText}> Create a Task </Text>

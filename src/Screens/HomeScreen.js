@@ -9,6 +9,9 @@ import Tasks from '../Components/CompletedTask.Component';
 import Peding from '../Components/PedingTask.Component';
 import NavOptions from '../Components/Navegation.components';
 
+// REDUX
+
+
 
 // import CompletedTaks  from '../Components/CompletedTask.Component';
 
