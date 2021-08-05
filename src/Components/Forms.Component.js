@@ -7,13 +7,10 @@ import { useNavigation } from '@react-navigation/native';
 
 
 // create a component
-const FormTask = ( {navigation} ) => {
+const FormTask = () => {
   const [taskTitle, setTaskTitle] = useState('')
-  function onSaveNote() {
-    navigation.state.params.addtask({taskTitle})
-    navigation.goBack()
-}
-  // const navigation = useNavigation();
+
+  const navigation = useNavigation();
   // const [date, setDate] = useState(new Date(1598051730000));
   // const [mode, setMode] = useState('date');
   // const [show, setShow] = useState(false);
@@ -107,7 +104,7 @@ const FormTask = ( {navigation} ) => {
             </View>
             <TouchableOpacity
                style={tw.style('pb-5 pt-4 m-2 w-80 rounded-full', styles.touchableOpacity )}
-               onPress={() => onSaveNote()}
+               onPress={() => navigation.goBack()}
                >
                 <View>
                   <Text style={styles.btnText}> Create a Task </Text>
