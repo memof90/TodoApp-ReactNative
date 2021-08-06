@@ -61,8 +61,8 @@ yarn ios or Yarn android
 
 ## Project Image Example UI
 
-![alt text](https://github.com/memof90/TodoApp-ReactNative/blob/master/imagesReadme/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20-%202021-08-04%20at%2019.24.07.png?raw=true)
-![alt text](https://github.com/memof90/TodoApp-ReactNative/blob/master/imagesReadme/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20-%202021-08-04%20at%2019.24.21.png?raw=true)
+![alt text](https://github.com/memof90/TodoApp-ReactNative/blob/master/imagesReadme/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20-%202021-08-06%20at%2018.39.47.png?raw=true)
+![alt text](https://github.com/memof90/TodoApp-ReactNative/blob/master/imagesReadme/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20-%202021-08-06%20at%2018.39.57.png?raw=true)
 
 
 
