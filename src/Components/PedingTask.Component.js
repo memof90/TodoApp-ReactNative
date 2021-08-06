@@ -1,5 +1,5 @@
 //import liraries
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import tw from 'tailwind-react-native-classnames';
@@ -9,12 +9,20 @@ import CheckBox from '../constants/CheckBox/CheckboxButton';
 
 // create a component
 const Peding = () => {
+    const [CompleteTask, setCompleteTask] = useState(false);
+
+    useEffect(() => {
+        console.log(CompleteTask);
+    }, [CompleteTask]);
+
     return (
     <SafeAreaView style={tw.style(styles.container, 'p-2 ml-3')}>
-            <Text style={styles.tittle}>Complete Tasks</Text>  
+            <Text style={styles.tittle}>Peding Tasks</Text>  
                 <View style={tw `mt-9`}>
                         <CheckBox 
                             text= 'Desing Wiframes' 
+                            selected={CompleteTask}
+                            onPress={() => setCompleteTask(!CompleteTask)}
                         />
                 </View>
     </SafeAreaView>

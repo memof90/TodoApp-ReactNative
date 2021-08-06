@@ -14,7 +14,7 @@ const AddTask = () => {
    const navigation = useNavigation();
 
     return (
-        <SafeAreaView>
+        <SafeAreaView style={{backgroundColor: 'white'}}>
             <View style={styles.container}>
             <TouchableOpacity
                 onPress={()=> navigation.navigate('HomeScreen')}
