@@ -38,7 +38,7 @@ const FormTask = () => {
             </View>
             <View style={styles.formItem}>
             <TextInput 
-            style={tw `pl-3 pb-5 pt-4 bg-gray-200 rounded m-2 w-80`}
+            style={tw `pl-3 pb-5 pt-4 bg-gray-200 rounded ml-4 w-80`}
               placeholder= "Desing Team Meeting"
               value={taskTitle}
               onChangeText={setTaskTitle}
@@ -49,26 +49,9 @@ const FormTask = () => {
             </View>
             <View style={styles.formItem}>
             <TextInput 
-            style={tw `pl-3 pb-5 pt-4 bg-gray-200 rounded m-2 w-80`}
+            style={tw `pl-3 pb-5 pt-4 bg-gray-200 rounded ml-4 w-80`}
               placeholder= "2021-02-28"
             />
-            {/* <TouchableOpacity
-           
-            onPress={() => showDatepicker()}
-            >
-            </TouchableOpacity>
-            {show && (
-        <DateTimePicker
-          testID="dateTimePicker"
-          value={date}
-          mode={mode}
-          is24Hour={true}
-          display="default"
-          onChange={onChange}
-          // style={{width: 320, backgroundColor: "gray"}} 
-          style={tw `pl-3 pb-10 pt-4 bg-gray-200 rounded m-2 w-80`}
-        />
-          )} */}
             </View>
             <View style={styles.formRowTwo}>
             <Text style={styles.formLabel}>Start Time</Text>
@@ -76,11 +59,11 @@ const FormTask = () => {
             </View>
             <View style={styles.formRowTwo}>
             <TextInput 
-            style={tw.style('pl-2 pb-5 pt-4 bg-gray-200 rounded w-36',{marginTop: -20})}
+            style={tw.style('pl-2 pb-5 pt-4 bg-gray-200 ml-4 rounded w-36',{marginTop: -20})}
               placeholder= "11:00 Am"
             />
             <TextInput 
-            style={tw.style('pl-3 pb-5 pt-4 bg-gray-200 rounded m-2 w-36',{marginTop: -20, marginRight: 30})}
+            style={tw.style('pl-3 pb-5 pt-4 bg-gray-200 rounded  w-36',{marginTop: -20, marginRight: 20})}
               placeholder= "14:00 Pm"
             />
             </View>
@@ -89,7 +72,7 @@ const FormTask = () => {
             </View>
             <View style={styles.formItem}>
             <TextInput 
-            style={tw `pl-3 pb-5 pt-4 bg-gray-200 rounded m-2 w-80`}
+            style={tw `pl-3 pb-5 pt-4 bg-gray-200 rounded ml-4 w-80`}
               placeholder= "10 minutes early"
             />
             </View>
@@ -98,7 +81,7 @@ const FormTask = () => {
             </View>
             <View style={styles.formItem}>
             <TextInput 
-            style={tw `pl-3 pb-5 pt-4 bg-gray-200 rounded m-2 w-80`}
+            style={tw `pl-3 pb-5 pt-4 bg-gray-200 rounded ml-4 w-80`}
               placeholder= "10 minutes early"
             />
             </View>
@@ -128,6 +111,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         flex: 2,
         fontWeight: 'bold',
+        marginLeft: 10
     },
     formItem: {
         alignItems: 'center',
@@ -135,7 +119,6 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         marginLeft: 15,
-        marginTop: -20
     },
     formRowTwo: {
         alignItems: 'center',
@@ -147,7 +130,7 @@ const styles = StyleSheet.create({
     },
     touchableOpacity: {
         backgroundColor: '#23C774',
-        marginTop: 80,
+        marginTop: 70,
         marginLeft: 30
     },
     btnText: {

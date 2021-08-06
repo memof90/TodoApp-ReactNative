@@ -35,7 +35,7 @@ const NavOptions = () => {
                onPress={() => navigation.navigate(item.screen)}
                >
                 <View>
-                  <Text style={styles.btnText}> Create a Task </Text>
+                  <Text style={styles.btnText}> Add Task </Text>
                 </View>
                </TouchableOpacity>
            )}
