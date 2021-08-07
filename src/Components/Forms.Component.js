@@ -46,7 +46,7 @@ const FormTask = () => {
             </View>
             <View style={styles.formItem}>
             <TextInput 
-            style={tw `pl-3 pb-8 pt-4 bg-gray-200 rounded ml-4 w-80`}
+            style={tw `pl-3 pt-3 pb-3 bg-gray-200 rounded ml-4 h-12 w-80`}
               placeholder= "Desing Team Meeting"
               value={taskTitle}
               onChangeText={setTaskTitle}
@@ -57,7 +57,7 @@ const FormTask = () => {
             </View>
             <View style={styles.formItem}>
             <TextInput 
-            style={tw `pl-3 pb-8 pt-4 bg-gray-200 rounded ml-4 w-80`}
+            style={tw `pl-3 pt-3 pb-3 bg-gray-200 rounded ml-4 h-12 w-80`}
               placeholder= "2021-02-28"
             />
             </View>
@@ -67,11 +67,11 @@ const FormTask = () => {
             </View>
             <View style={styles.formRowTwo}>
             <TextInput 
-            style={tw.style('pl-2 pb-5 pt-4 bg-gray-200 ml-4 rounded w-36',{marginTop: -20})}
+            style={tw.style('pl-2 pb-3 pt-3 bg-gray-200 ml-4 h-12 rounded w-36',{marginTop: -20})}
               placeholder= "11:00 Am"
             />
             <TextInput 
-            style={tw.style('pl-3 pb-5 pt-4 bg-gray-200 rounded  w-36',{marginTop: -20, marginRight: 20})}
+            style={tw.style('pl-3 pb-3 pt-3 bg-gray-200 rounded h-12 w-36',{marginTop: -20, marginRight: 20})}
               placeholder= "14:00 Pm"
             />
             </View>
@@ -80,7 +80,7 @@ const FormTask = () => {
             </View>
             <View style={styles.formItem}>
             <TextInput 
-            style={tw `pl-3 pb-8 pt-4 bg-gray-200 rounded ml-4 w-80`}
+            style={tw `pl-3 pt-3 pb-3 bg-gray-200 rounded ml-4 h-12 w-80`}
               placeholder= "10 minutes early"
             />
             </View>
